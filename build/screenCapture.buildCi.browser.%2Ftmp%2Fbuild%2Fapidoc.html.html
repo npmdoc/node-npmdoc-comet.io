@@ -1,0 +1,169 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/snakajima/comet.io#readme">comet.io (v0.0.5)</a>
+</h1>
+<h4>light-weight comet server &amp; client</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.comet.io">module comet.io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.comet.io.createServer">
+            function <span class="apidocSignatureSpan">comet.io.</span>createServer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">comet.io.</span>io.comet_io</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.comet.io.comet_io">module comet.io.comet_io</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.comet.io.comet_io.createServer">
+            function <span class="apidocSignatureSpan">comet.io.comet_io.</span>createServer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.comet.io" id="apidoc.module.comet.io">module comet.io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.comet.io.createServer" id="apidoc.element.comet.io.createServer">
+        function <span class="apidocSignatureSpan">comet.io.</span>createServer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createServer = function () {
+  return new Server();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Lightweight comet server &amp; client for Node.js
+
+Server
+------
+
+```js
+var app = require('http').<span class="apidocCodeKeywordSpan">createServer</span>(handler);
+var file = new(require('node-static').Server)(__dirname + '/web', {});
+var comet = require('../lib/comet.io.js').createServer();
+
+app.listen(8000);
+function handler(request, response) {
+request.on('end', function() {
+  if (!comet.serve(request, response)) {
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.comet.io.comet_io" id="apidoc.module.comet.io.comet_io">module comet.io.comet_io</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.comet.io.comet_io.createServer" id="apidoc.element.comet.io.comet_io.createServer">
+        function <span class="apidocSignatureSpan">comet.io.comet_io.</span>createServer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">createServer = function () {
+  return new Server();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Lightweight comet server &amp; client for Node.js
+
+Server
+------
+
+```js
+var app = require('http').<span class="apidocCodeKeywordSpan">createServer</span>(handler);
+var file = new(require('node-static').Server)(__dirname + '/web', {});
+var comet = require('../lib/comet.io.js').createServer();
+
+app.listen(8000);
+function handler(request, response) {
+request.on('end', function() {
+  if (!comet.serve(request, response)) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
